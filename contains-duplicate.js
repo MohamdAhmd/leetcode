@@ -2,11 +2,11 @@ function containsDuplicate(nums) {
     let hashset = new Set();
     for (let i = 0; i < nums.length; i++) {
         if (hashset.has(nums[i])) {
-            return console.log('true');;
+            return true;
         }
         hashset.add(nums[i]);
     }
-    return console.log('false');
+    return false
 }
 ;
 
